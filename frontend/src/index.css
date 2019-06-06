@@ -1,0 +1,110 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+:root {
+  --black: #18181E;
+  --gold: #DEC79B;
+  --light-gold: rgb(232, 221, 188);
+  --grey: #525049;
+  --red: #E16862;
+  --turq: #94BDB9;
+  --lancelot: lancelot, 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --lora: Lora, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial;
+  --noto: 'Noto Sans HK', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  font-family: var(--noto);
+}
+h1, h2, h3, p {
+  color: var(--gold);
+}
+.home {
+  margin: 1rem;
+}
+.home p {
+  margin: 0 3rem;
+  font-size: 4rem;
+}
+h1 {
+  font-size: 8rem;
+  font-family: var(--lancelot);
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
+.home .icons {
+  margin-top: 1.5rem;
+}
+.home .icons a{
+  padding: 0.5rem;
+}
+.home .intro {
+  margin-top: 1rem;
+  font-family: var(--lancelot);
+  font-size: 2.5rem;
+}
+nav {
+  overflow: hidden;
+  background-color: var(--grey);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav div.links {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  padding: 1rem 1.5rem;
+  float: left;
+  display: block;
+  font-family: var(--lora);
+}
+.active {
+  color: var(--light-gold);
+  text-decoration: underline;
+}
+a, a i {
+  color: var(--gold);
+  text-decoration: none;
+  transition: transform 0.2s;
+  font-size: 1.8rem;
+  text-align: center;
+}
+a:hover, a i:hover{
+  transform: scale(1.1);
+  color: var(--light-gold);
+}
+div.section {
+  
+}
+div.section {
+  margin: 3rem;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  -webkit-box-align: center; 
+}
+.contact-card {
+  font-size: 2rem;
+  border: 1.5px solid var(--light-gold);
+  color: var(--gold);
+  padding: 1rem 2rem;
+  margin: 1rem 1rem;
+}
+.lancelot{
+  font-family: var(--lancelot);
+  font-size: 5.7rem;
+  font-style: italic;
+  color: var(--turq);
+}

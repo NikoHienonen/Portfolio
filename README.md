@@ -15,3 +15,15 @@ Requirements
 •	CV
 •	GitHub-link
 •	Quick intro to my life
+
+Palette
+•	 Black: #18181E
+•	 White: #EEEEE8
+•	 Turqoise: #94BDB9
+•	 Red: #E16862
+•	 Gold: #DEC79B
+•	
+•	
+•	
+•	
+
