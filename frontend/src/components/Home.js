@@ -7,9 +7,9 @@ const Home = () => {
       <p><span className="lancelot">Elegantly</span> simple</p>
       <p className="intro">Web Developer, Designer, Entrepreneuer</p>
       <div className="icons">
-        <a href="https://github.com/NikoHienonen"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/niko-hienonen/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/niko.hienonen"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://github.com/NikoHienonen"><i className="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/niko-hienonen/"><i className="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/niko.hienonen"><i className="fab fa-facebook-square"></i></a>
       </div>
     </div>
   );
