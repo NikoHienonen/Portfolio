@@ -9,10 +9,8 @@ const Introduction = () => {
       I'm currently finishing my degree in web development in Tampere University and working
       on projects alongside school. I'm also open to job and project proposals, so see the 
       contact-page to contact me!</p>
-      <p>My main strengths are my passion to web development, my aspiration to learn new 
-      techniques and my desire to create beautiful things. From early on in my career I wanted
-      to do the styling of my work by myself instead of using a library. This allows me to have a 
-      zero compromise vision with my work.</p>
+      <p>My main strengths are my passion to web development, my aspiration to evolve and learn new 
+      techniques and my desire to create beautiful things.</p>
       <p>Here are some of the techniques I use:</p>
       <div className="techniques">
         <i className="fab fa-react"></i>
