@@ -78,5 +78,21 @@ div.section {
       font-size: 4rem;
       margin: 0 0.5rem;
       color: var(--primary); }
+  div.section div.projects {
+    margin: 1rem 0; }
+    div.section div.projects div.project-card {
+      margin: 1rem 0; }
+      div.section div.projects div.project-card img {
+        width: 90vw; }
+      div.section div.projects div.project-card div.card-info {
+        margin: 0.5rem; }
+        div.section div.projects div.project-card div.card-info p {
+          margin: 0 0.5rem; }
+          div.section div.projects div.project-card div.card-info p.stack {
+            display: block;
+            margin: 0 auto; }
+          div.section div.projects div.project-card div.card-info p i {
+            font-size: 2.5rem;
+            margin-right: 0.5rem; }
 
 /*# sourceMappingURL=index.css.map */

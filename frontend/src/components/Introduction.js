@@ -4,7 +4,7 @@ const Introduction = () => {
   return (
     <div className="section introduction">
       <h1>Introduction</h1>
-      <img src='/meitsi.jpg' alt="A picture of me"/>
+      <img src='/meitsi.jpg' alt="Niko"/>
       <p>Welcome to my portfolio! I'm Niko Hienonen, a 22-year old web developer from Tampere. 
       I'm currently finishing my degree in web development in Tampere University and working
       on projects alongside school. I'm also open to job and project proposals, so see the 
