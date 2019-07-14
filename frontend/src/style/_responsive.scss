@@ -1,0 +1,107 @@
+
+// Small devices
+@media screen and  (min-width: 576px) {
+  div.section {
+    &.contact , &.home{
+      padding-top: 3rem;
+    } 
+    &.contact .contact-cards {
+      margin-left: 3rem;
+    }
+    &.introduction {
+      img {
+        float: right;
+      }
+    }
+    .projects {
+      width: 90vw;
+      .project-card {
+        .card-info {
+          .links i{
+            font-size: 2rem;
+          }
+          .stack i {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Medium devices
+@media screen and (min-width: 768px) {
+  header {
+    nav {
+      .closed {
+        display: inline-block;
+      }
+      button.navToggler {
+        display: none;
+      }
+      .links {
+        position: fixed;
+        top: 0;
+        border-top: none;
+        border-bottom: 0.3rem solid var(--lightpink);
+        a {
+          display: inline;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  
+  div.section {
+    &.home, &.contact{
+      p, .contact-card {
+        font-size: 2rem;
+      }
+      span.lancelot {
+        font-size: 2.4rem;
+      }
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    .projects {
+      width: 75vw;
+    }
+  }
+}
+
+// Large devices
+@media screen and (min-width: 992px) {
+
+}
+
+
+// Extra large devices
+@media screen and (min-width: 1200px) {
+
+  footer {
+    font-size: 2.5rem;
+  }
+  div.section{
+    margin: 3rem;
+    h1 {
+      font-size: 8rem;
+    }
+    &.home, &.contact{
+      p, .contact-card {
+        font-size: 4rem;
+      }
+      span.lancelot {
+        font-size: 5.4rem;
+      }
+      div.icons a i{
+        font-size: 3rem;
+      }
+    }
+    .projects {
+      width: 50vw;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,224 @@
+header {
+  background-color: var(--darkred);
+  width: 100%;
+  height: 3rem; }
+  header nav .links {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    padding: 1rem 0.5rem;
+    background-color: var(--darkred);
+    width: 100%;
+    border-top: 0.1rem solid var(--lightpink); }
+    header nav .links a {
+      padding: 0.5rem 1rem;
+      display: block;
+      text-decoration: none;
+      color: var(--lightpink); }
+      header nav .links a.active {
+        color: var(--pink); }
+  header nav button.navToggler {
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--darkred);
+    color: var(--lightpink);
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer; }
+  header .closed {
+    display: none; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+:root {
+  --background: #E3E2DF;
+  --primary: #9A1750;
+  --light-primary: #EE4C7C;
+  --secondary: #EE4C7C;
+  --darkred: #5D001E;
+  --lightgrey: #E3E2DF;
+  --lightpink: #E3AFBC;
+  --darkpink: #9A1750;
+  --pink: #EE4C7C;
+  --lancelot: lancelot, 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --lora: Lora, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial;
+  --noto: 'Noto Sans HK', Arial, Helvetica, sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: var(--background);
+  font-family: var(--lora);
+  color: var(--primary);
+  min-height: 100%; }
+
+p {
+  line-height: 1.5; }
+
+a {
+  color: var(--pink); }
+
+footer {
+  width: 100%;
+  background-color: var(--lightpink);
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0; }
+
+div.App {
+  min-height: 100vh;
+  position: relative; }
+
+div.container {
+  min-height: 100%;
+  padding: 3rem 0.5rem; }
+
+div.section {
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s; }
+  div.section h1 {
+    font-family: var(--lancelot);
+    font-size: 3rem; }
+  div.section span.lancelot {
+    font-family: var(--lancelot);
+    font-size: 1.4rem;
+    color: var(--secondary);
+    font-style: italic;
+    margin-left: 1rem; }
+  div.section p.intro {
+    margin: 2rem 0; }
+  div.section div.icons a {
+    color: var(--primary);
+    margin-right: 0.5rem;
+    transition: all 0.2s ease-in;
+    font-size: 1.5rem; }
+    div.section div.icons a:hover {
+      color: var(--light-primary); }
+  div.section.introduction img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 100%;
+    max-width: 13rem;
+    border-radius: 50%;
+    margin-bottom: 0; }
+  div.section.introduction p {
+    margin: 1rem; }
+  div.section.introduction div.techniques {
+    margin: 1rem; }
+    div.section.introduction div.techniques i {
+      display: inline-block;
+      width: 4.5rem;
+      font-size: 4rem;
+      margin: 0 0.5rem;
+      color: var(--primary); }
+  div.section div.projects {
+    display: block;
+    margin: 1rem auto; }
+    div.section div.projects div.project-card {
+      margin: 1rem 0;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+      div.section div.projects div.project-card img {
+        max-width: 100%; }
+      div.section div.projects div.project-card div.card-info {
+        padding: 0 0.2rem;
+        margin: 0.5rem; }
+        div.section div.projects div.project-card div.card-info p {
+          margin: 0 0.5rem;
+          margin-bottom: 0.5rem; }
+          div.section div.projects div.project-card div.card-info p.stack {
+            display: block;
+            margin: 0 auto; }
+          div.section div.projects div.project-card div.card-info p i {
+            font-size: 2.5rem;
+            margin-right: 0.5rem; }
+        div.section div.projects div.project-card div.card-info div.links {
+          overflow: hidden; }
+          div.section div.projects div.project-card div.card-info div.links a {
+            color: var(--pink);
+            font-size: 1.2rem;
+            margin-left: 0.5rem;
+            float: right;
+            transition: 0.3s all ease-in; }
+            div.section div.projects div.project-card div.card-info div.links a:hover {
+              color: var(--lightpink); }
+  div.section div.contact-cards {
+    margin: 0 0.5rem; }
+    div.section div.contact-cards .contact-card {
+      margin: 0.5rem 0; }
+      div.section div.contact-cards .contact-card i {
+        color: var(--pink); }
+
+@media screen and (min-width: 576px) {
+  div.section.contact, div.section.home {
+    padding-top: 3rem; }
+  div.section.contact .contact-cards {
+    margin-left: 3rem; }
+  div.section.introduction img {
+    float: right; }
+  div.section .projects {
+    width: 90vw; }
+    div.section .projects .project-card .card-info .links i {
+      font-size: 2rem; }
+    div.section .projects .project-card .card-info .stack i {
+      font-size: 4rem; } }
+@media screen and (min-width: 768px) {
+  header nav .closed {
+    display: inline-block; }
+  header nav button.navToggler {
+    display: none; }
+  header nav .links {
+    position: fixed;
+    top: 0;
+    border-top: none;
+    border-bottom: 0.3rem solid var(--lightpink); }
+    header nav .links a {
+      display: inline;
+      font-size: 1.8rem; }
+
+  div.section.home p, div.section.home .contact-card, div.section.contact p, div.section.contact .contact-card {
+    font-size: 2rem; }
+  div.section.home span.lancelot, div.section.contact span.lancelot {
+    font-size: 2.4rem; }
+  div.section h1 {
+    font-size: 5rem; }
+  div.section .projects {
+    width: 75vw; } }
+@media screen and (min-width: 1200px) {
+  footer {
+    font-size: 2.5rem; }
+
+  div.section {
+    margin: 3rem; }
+    div.section h1 {
+      font-size: 8rem; }
+    div.section.home p, div.section.home .contact-card, div.section.contact p, div.section.contact .contact-card {
+      font-size: 4rem; }
+    div.section.home span.lancelot, div.section.contact span.lancelot {
+      font-size: 5.4rem; }
+    div.section.home div.icons a i, div.section.contact div.icons a i {
+      font-size: 3rem; }
+    div.section .projects {
+      width: 50vw;
+      margin: 0 auto; } }
+
+/*# sourceMappingURL=index.css.map */

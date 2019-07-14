@@ -4,24 +4,25 @@ import GetProjects from './GetProjects';
 import Project from './Project';
 
 class Projects extends Component {
-  state = { projects: [] };
+  state = { projects: [], projectElements: []};
 
   componentDidMount() {
-    const projects = GetProjects();
-    this.setState({projects});
+    this.getProjects();
   }
-  renderProjects = () => {
-    let projectsArray = [];
-    this.state.projects.forEach(project => {
-      projectsArray.push(Project(project));
-    })
+  getProjects = () => {
+    const projects = GetProjects();
+    this.setState({projects}, () => {this.turnProjectsToJSX();});
+  }
+  turnProjectsToJSX = () => {
+    const array = this.state.projects.map(project => Project(project))
+    this.setState({projectElements: array});
   }
   render() {
     return (
       <div className="section">
         <h1>Projects</h1>
         <div className="projects">
-          {this.renderProjects()}
+          {this.state.projectElements}
         </div>
       </div>
     );
