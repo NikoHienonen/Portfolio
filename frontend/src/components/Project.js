@@ -15,14 +15,20 @@ const renderLink = (link) => {
   : <a href={link}><i className="fas fa-link"></i></a>
 }
 
+const renderImgLink = (link, img, alt) => {
+  return !link 
+  ?  <img alt={alt} src={"/projects/"+img}/>
+  : (<a href={link}>
+      <img alt={alt} src={"/projects/"+img}/>
+    </a>)
+}
+
 const Project = (project) => {
   const {id, name, description, stack, alt, img, link, github } = project;
     return (
       <div className="project-card" key={id}>
       <div className="card-head">
-        <a href={link}>
-          <img alt={alt} src={"/projects/"+img}/>
-        </a>
+        {renderImgLink(link, img, alt)}
       </div>
       <div className="card-info">
         <h2>{name}</h2>

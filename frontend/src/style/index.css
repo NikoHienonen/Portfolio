@@ -140,6 +140,8 @@ div.section {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
       div.section div.projects div.project-card img {
         max-width: 100%; }
+        div.section div.projects div.project-card img:hover {
+          opacity: 0.8; }
       div.section div.projects div.project-card div.card-info {
         padding: 0 0.2rem;
         margin: 0.5rem; }
