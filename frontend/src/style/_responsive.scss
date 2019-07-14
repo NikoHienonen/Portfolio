@@ -99,9 +99,24 @@
         font-size: 3rem;
       }
     }
+    &.introduction {
+      p{
+        font-size: 1.5rem;
+      }
+
+    }
     .projects {
       width: 50vw;
       margin: 0 auto;
+      h2 {
+        font-size: 3rem;
+      }
+      p.description {
+        font-size: 1.5rem;
+      }
+      p.stack i::before{
+        font-size: 8rem;
+      }
     }
   }
 }

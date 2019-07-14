@@ -218,8 +218,16 @@ div.section {
       font-size: 5.4rem; }
     div.section.home div.icons a i, div.section.contact div.icons a i {
       font-size: 3rem; }
+    div.section.introduction p {
+      font-size: 1.5rem; }
     div.section .projects {
       width: 50vw;
-      margin: 0 auto; } }
+      margin: 0 auto; }
+      div.section .projects h2 {
+        font-size: 3rem; }
+      div.section .projects p.description {
+        font-size: 1.5rem; }
+      div.section .projects p.stack i::before {
+        font-size: 8rem; } }
 
 /*# sourceMappingURL=index.css.map */

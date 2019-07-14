@@ -26,7 +26,7 @@ const Project = (project) => {
       </div>
       <div className="card-info">
         <h2>{name}</h2>
-        <p>{description}</p>
+        <p className="description">{description}</p>
         <p className="stack">
           {renderStack(stack)}
         </p>
