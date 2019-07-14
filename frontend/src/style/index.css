@@ -9,7 +9,8 @@ header {
     padding: 1rem 0.5rem;
     background-color: var(--darkred);
     width: 100%;
-    border-top: 0.1rem solid var(--lightpink); }
+    border-top: 0.1rem solid var(--lightpink);
+    transition: all .5s ease-in-out; }
     header nav .links a {
       padding: 0.5rem 1rem;
       display: block;
