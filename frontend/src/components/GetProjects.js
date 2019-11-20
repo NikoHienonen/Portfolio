@@ -1,6 +1,18 @@
 const GetProjects = () => {
   return [
     {
+      id: 122
+      , name: "Iguana Weather App"
+      , description: "Iguana Weather App was created for a school project to showcase skill in Swift-development for iOS. The creation of this app sparked my interest in mobile app development!"
+      , stack : [
+        "swift"
+      ]
+      , img : 'iguana.jpg'
+      , alt: "iguana"
+      , github: "https://github.com/NikoHienonen/Iguana-Weather-App"
+      , link: ""
+    },
+    {
       id: 123
       , name: "Exotic Snackstore"
       , description: "Exotic Snackstore is a demo webstore that sells foreign snacks. Users can create accounts and place demo orders while admins can edit the products, view orders and manage users. Done with Teemu Tannerma."

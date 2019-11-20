@@ -20,6 +20,7 @@ const Introduction = () => {
         <i className="fab fa-vuejs"></i>
         <i className="fab fa-sass"></i>
         <i className="fab fa-node"></i>
+        <i class="fab fa-swift"></i>
         <i className="fab fa-js-square"></i>
         <i className="fab fa-python"></i>
       </div>
